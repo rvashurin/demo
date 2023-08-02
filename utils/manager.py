@@ -93,7 +93,7 @@ class UEManager:
             
             batch_stats['generation_params'] = {}
             batch_stats['model'] = self.model
-            batch_stats['path_to_train_stats'] = '/Users/romanvashurin/workspace/lm-polygraph/train_stats.pkl'
+            batch_stats['path_to_train_stats'] = './train_stats.pkl'
 
             for stat_calculator in self.stat_calculators:
                 new_stats = stat_calculator(batch_stats, inp_texts, self.model)
